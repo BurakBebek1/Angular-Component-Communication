@@ -1,0 +1,8 @@
+<p>list-users works!</p>
+<app-filter-users
+  [data]="'Communication'"
+  [name]="name"
+  (updatedList)="updateUser($event)"
+></app-filter-users>
+
+{{ listUsers | json }}
